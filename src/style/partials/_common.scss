@@ -1,0 +1,21 @@
+.btn-heart {
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	font-size: 22px;
+	position: absolute;
+	top: 20px;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.badge {
+	color: white;
+	background-color: black;
+	font-size: 12px;
+	line-height: 30px;
+	padding: 0 12px;
+	font-weight: bold;
+}
