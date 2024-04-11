@@ -36,7 +36,7 @@ export default {
 									&hearts;
 								</span>
 								<ul class="badges">
-									<li v-for="badge in product.badges" :key="product.id" :class="badge.type == 'tag' ? 'badge badge--sostenibility':'badge badge--discount'">
+									<li v-for="badge in product.badges" :key="product.id" :class="badge.type == 'tag' ? 'badge--sostenibility':'badge--discount'" class="badge">
 										{{ badge.value }}
 									</li>
 								</ul>
