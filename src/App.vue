@@ -2,12 +2,14 @@
 import HeroSection from './components/HeroSection.vue'
 import ProductSection from './components/ProductSection.vue'
 import FooterSection from './components/FooterSection.vue'
+import DataBase from './assets/db.json'
 
 export default {
   components: {
     HeroSection,
     ProductSection,
-    FooterSection
+    FooterSection,
+    DataBase
     
   },
   data() {
