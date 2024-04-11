@@ -2,6 +2,7 @@
 import HeroSection from './components/HeroSection.vue'
 import ProductSection from './components/ProductSection.vue'
 import FooterSection from './components/FooterSection.vue'
+import HelloWorld from './components/HelloWorld.vue'
 import DataBase from './assets/db.json'
 
 export default {
@@ -9,7 +10,7 @@ export default {
     HeroSection,
     ProductSection,
     FooterSection,
-    DataBase
+    HelloWorld
     
   },
   data() {
@@ -25,7 +26,6 @@ export default {
   <HeroSection />
   <ProductSection />
   <FooterSection/>
-
 </template>
 
 <style lang="scss">
