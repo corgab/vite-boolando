@@ -1,11 +1,12 @@
 <script>
-import DataBase from '../assets/db.json'
+import DataBase from '/db.json'
 import CardProduct from './CardProduct.vue'
+import { store } from '../store.js'
 
 export default {
 	data() {
 		return {
-			products: DataBase.products
+			store
 		}
 	},
 	components: {
@@ -23,7 +24,7 @@ export default {
 		<div class="section products">
 			<div class="container">
 				<ul class="row">
-					<CardProduct v-for="product in products" :key="product.id" :product="product"/>
+					<CardProduct v-for="product in store.data" :key="product.id" :product="product"/>
 				</ul>
 			</div>
 		</div>

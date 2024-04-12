@@ -2,21 +2,28 @@
 import HeroSection from './components/HeroSection.vue'
 import ProductSection from './components/ProductSection.vue'
 import FooterSection from './components/FooterSection.vue'
-import HelloWorld from './components/HelloWorld.vue'
-import DataBase from './assets/db.json'
+import { store } from './store.js'
+import axios from 'axios'
 
 export default {
   components: {
     HeroSection,
     ProductSection,
     FooterSection,
-    HelloWorld
     
   },
   data() {
     return {
-      message: 'Hello world!'
+      store,
     }
+  },
+  mounted() {
+    axios.get('http://localhost:3000/products')
+    .then((res) => {
+      // console.log(res)
+      // console.log(res.data)
+      this.store.data = res.data
+    })
   }
 }
 

@@ -1,4 +1,5 @@
 <script>
+import { store } from '../store.js'
 export default {
     props: {
         product: Object
@@ -6,7 +7,7 @@ export default {
 
     data() {
         return {
-            // message: 'Hello world!'
+            store
         }
     }
 }
@@ -16,7 +17,7 @@ export default {
     <li class="col-12 col-md-6 col-lg-4">
         <div class="card product">
             <div class="card__header">
-                <img class="product__thumb" :src="'../public/img/' + product.frontImage" alt="" />
+                <img class="product__thumb" :src="'/img/' + product.frontImage" alt="" />
                 <img class="product__thumb thumb--hover" :src="'../public/img/' + product.backImage" alt="" />
                 <span v-if="product.isInFavorites == true" class="btn-heart">
                     &hearts;
